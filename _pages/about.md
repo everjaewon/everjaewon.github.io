@@ -2,6 +2,8 @@
 title: "遥か彼方に!"
 permalink: /about/
 layout: single
+author_profile: true
+sidebar_main: true
 ---
 
 ## 게임 개발자 꿈나무의 블로그
