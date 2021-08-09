@@ -104,12 +104,12 @@ author:
   name             : "선인장 애벌레 Cactuspillar"
   avatar           : "/assets/images/profile.jfif"
   bio              : "**갓겜**을 만드는 그 날까지!"
-  location         : "경기도 하남시"
+  location         : 
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:dbsgnldnjs@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -121,7 +121,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/everjaewon"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
