@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "끊임없이 흡수하는 공부 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : ""
+name                     : "선인장 애벌레"
 description              : "An amazing website."
 url                      : "https://everjaewon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "윤재원"
+  name             : "선인장 애벌레 Cactuspillar"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "게임 클라이언트 프로그래머를 목표로 공부 중입니다!"
   location         : "경기도 하남시"
