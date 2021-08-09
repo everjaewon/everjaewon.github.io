@@ -4,7 +4,7 @@ permalink: /about/
 layout: single
 ---
 
-## everjaewon.github.io 블로그
+## 게임 개발자 꿈나무의 블로그
 
 이 블로그는 언젠가 마음 속에 그려왔던 "갓겜"을 직접 만들기를 소망하는 어느 프로그래머의 블로그이다.
 
