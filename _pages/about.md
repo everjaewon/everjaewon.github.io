@@ -1,5 +1,5 @@
 ---
-title: "이 블로그 설명서"
+title: "遥か彼方に!"
 permalink: /about/
 layout: single
 ---
