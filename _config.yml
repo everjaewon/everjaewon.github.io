@@ -125,9 +125,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: "운영체제"
-      icon:
-      url: "https://everjaewon.github.io/categories/운영체제/"
+
 
 # Site Footer
 footer:
