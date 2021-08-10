@@ -14,8 +14,8 @@
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "운영체제" %}
-                        <li><a href="/categories/운영체제" class="">운영체제 ({{category[1].size}})</a></li>
+                    {% if category[0] == "os" %}
+                        <li><a href="/categories/os" class="">운영체제 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
