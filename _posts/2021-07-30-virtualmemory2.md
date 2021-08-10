@@ -55,7 +55,7 @@ global 교체
 
 ​    
 
-​    
+​    <br><br>
 
 # 스래싱(thrasing)
 
@@ -67,7 +67,7 @@ global 교체
 
 프로세스가 locality를 옮겨다니고, 이 locality들이 중복 가능하기에 paging 작동
 
-사용 중인 페이지의 size의 합이 전체 메모리 size를 넘기면 스래싱 발생<br><br><br><br>
+사용 중인 페이지의 size의 합이 전체 메모리 size를 넘기면 스래싱 발생<br><br><br><br><br>
 
 # Working-Set 모델
 
@@ -215,7 +215,7 @@ page size 증가 : 모든 프로그램이 큰 page size를 요하지 않으므�
 
 ​     입출력은 시스템 메모리와 입출력 기기 사이에서만 발생한다.
 
- • ‘lock bits’를 이용해 물리적 메모리의 page를 잠근다.<br><br><br><br>
+ • ‘lock bits’를 이용해 물리적 메모리의 page를 잠근다.<br><br><br><br><br>
 
 # 가상 메모리의 이점
 
@@ -289,12 +289,12 @@ page size 증가 : 모든 프로그램이 큰 page size를 요하지 않으므�
 
  ① inactive_list : 아주 중요하다고는 알려지지 않은 페이지들
 
- ② active_list : 자주 참조된다고 알려진 페이지들 (= working set을 정의하는 페이지들)<br>
+ ② active_list : 자주 참조된다고 알려진 페이지들 (= working set을 정의하는 페이지들)<br><br>
 
 커널 swap daemon (커널 스레드)
 
  • 주기적으로 wake up한다. 메모리가 부족하면 더 자주 wake up한다.
 
- • 사용 안 된 페이지를 찾았거나, 페이지를 inactive list로 옮기거나, 디스크에 dirty한 페이지를 write하거나, 필요한 경우 페이지를 교체 방출할 때 메모리를 체크한다.<br>
+ • 사용 안 된 페이지를 찾았거나, 페이지를 inactive list로 옮기거나, 디스크에 dirty한 페이지를 write하거나, 필요한 경우 페이지를 교체 방출할 때 메모리를 체크한다.<br><br>
 
 페이지 교체 알고리즘도 존재하지만 있다고만 알아두자.
