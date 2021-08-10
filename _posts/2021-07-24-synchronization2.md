@@ -103,7 +103,7 @@ toc: true
 
    프로세스 하나의 잘못이 전체 프로세스들의 실패로 직결 가능
 
-   ![img](file:///C:\Users\Shako\AppData\Local\Temp\DRW00003cf84a81.gif)  사용하기 어려움 & 버그 생기기 쉬움!
+   결론 :  사용하기 어려움 & 버그 생기기 쉬움!
 
 ​    <br><br><br>
 
