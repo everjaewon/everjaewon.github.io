@@ -46,7 +46,7 @@ body {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;*/
   
-  width: calc(100% - #{$right-sidebar-width-narrow});
+  width: 100%;
   }
 
   .page__inner-wrap {
