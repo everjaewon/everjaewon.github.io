@@ -433,7 +433,7 @@ associative 조회 = e 시간 유닛
 
 단순한 형태인 two-level paging에 대한 그림을 삽입한다.
 
-![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/twolevel.png){: .align-center}{: width="20%" height="20%"}
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/twolevel.png){: .align-center}{: width="50%" height="50%"}
 
 <br>
 
