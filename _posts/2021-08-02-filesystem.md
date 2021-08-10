@@ -325,7 +325,8 @@ toc: true
 
    <br> 
 
-• 순환 그래프 디렉토리
+• 순환 그래프 디렉토리  
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/acyclicdirectory.png){: .align-center}
 
 – 공유 하위 디렉토리 및 파일 보유
 
