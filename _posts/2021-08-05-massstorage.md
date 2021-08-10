@@ -21,7 +21,7 @@ toc: true
 
 # 디스크 해부
 
-![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/disk.png){: width="50%" height="50%"}    
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/disk.png){: width="70%" height="70%"}    
 
 ​    <br><br><br><br>
 
