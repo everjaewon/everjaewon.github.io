@@ -1,6 +1,7 @@
 ---
 title: "운영체제"
 layout: archive
+classes: wide
 permalink: categories/os/
 author_profile: true
 sidebar_main: true
