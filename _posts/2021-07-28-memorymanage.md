@@ -391,13 +391,13 @@ External Fragmentation 해결할 방법이라 했죠? 프로그램 옮겨서 구
 
   → CPU가 논리적 주소를 내면, page table을 거쳐 물리적 주소로 바꾼 뒤 메모리로 가는 속도
 
-associative 조회 =   ![img](file:///C:\Users\Shako\AppData\Local\Temp\DRW000009484e45.gif)  시간 유닛
+associative 조회 = e 시간 유닛
 
 메모리 cycle 시간이 1마이크로초라고 가정
 
-적중률(  ![img](file:///C:\Users\Shako\AppData\Local\Temp\DRW000009484e47.gif)  ) : TLB에서 페이지 번호를 찾은 횟수의 퍼센티지
+적중률( a ) : TLB에서 페이지 번호를 찾은 횟수의 퍼센티지
 
-유효 접근 시간 : (1 +   ![img](file:///C:\Users\Shako\AppData\Local\Temp\DRW000009484e49.gif)  )  ![img](file:///C:\Users\Shako\AppData\Local\Temp\DRW000009484e4b.gif)   + (2 +   ![img](file:///C:\Users\Shako\AppData\Local\Temp\DRW000009484e4d.gif)  )(1 -   ![img](file:///C:\Users\Shako\AppData\Local\Temp\DRW000009484e4f.gif)  )  =  2 +   ![img](file:///C:\Users\Shako\AppData\Local\Temp\DRW000009484e51.gif)   -   ![img](file:///C:\Users\Shako\AppData\Local\Temp\DRW000009484e53.gif)  
+유효 접근 시간 : (1 + e)a   + (2 + e)(1 - a)  =  2 + e - a  
 
 <br><br>
 
