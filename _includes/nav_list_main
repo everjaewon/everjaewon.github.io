@@ -15,7 +15,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Os" %}
-                        <li><a href="/categories/os" class="" style="size:16px">운영체제 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/os" class="" style="font-size:14px">운영체제 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
