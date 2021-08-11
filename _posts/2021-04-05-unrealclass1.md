@@ -114,7 +114,7 @@ Source는 실제 c++ 코드가 들어온다.
 
 # 프로젝트 창 살펴보기
 ![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-8.png)
-<br>
+<br><br>
 이제 프로젝트 화면으로 돌아오자.<br>
 하단에 '콘텐츠 브라우저'가 있다. 맨 왼쪽의 버튼을 누르면,
 <br><br>
@@ -286,9 +286,9 @@ F12로 쭉 상속 구조를 따라가면 Actor 상속 받고 있다는 걸 알 �
 
 가장 위의 Default Modes부터 살펴보면, 모든 월드에서 여기서 설정한대로의 모드를 사용한다.<br>
 만약 각각의 월드에 내가 원하는 게임모드를 따로 설정하면 기본 게임모드는 무시된다.<br>
-이 곳은 c++ 코드에 만들어진 UE88GameModeBase로 선택해주도록 하자.
+이 곳은 c++ 코드에 만들어진 [프로젝트명]GameModeBase로 선택해주도록 하자.
 
-밑의 Default Maps에서, 에디터 시작 맵을 main으로 설정.<br>
+밑의 Default Maps에서, 에디터 시작 맵을 Main으로 설정.<br>
 그 밑의 '게임 기본 맵'은 게임을 다 만들고 실행 파일을 시작했을 때, 동작되는 맵을 의미한다.<br>
 이런 식으로 기본 동작되는 레벨을 변경할 수 있다.
 
