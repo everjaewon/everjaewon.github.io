@@ -8,21 +8,27 @@ toc: true
 ---
 
 <br><br>
-![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-1.png) <br>
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-1.png)
+<br><br>
 에픽게임즈 런쳐에서 상단의 '라이브러리'를 눌러, '엔진 버전' 란에서 버전을 선택해 설치한다.
 설치한 버전을 누르면 언리얼 엔진이 켜진다.
-<br>
-![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-2.png) <br>
-'언리얼 프로젝트 브라우저' 라는 새 창이 뜬다.
-기존 프로젝트들은 위에 나오고, 게임용 프로젝트를 선택하려면 맨 위의 게임을 눌러주면 된다.
+<br><br><br>
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-2.png)
+<br><br>
+'언리얼 프로젝트 브라우저' 라는 새 창이 뜬다.<br>
+기존 프로젝트들은 위에 나오고, 게임용 프로젝트를 선택하려면 맨 위의 게임을 눌러주면 된다.<br>
 (언리얼마다 기본적으로 타입마다 다르게 제공해주는 템플릿이 있고, 게임은 당연히 게임 관련 템플릿)
 
-이후 다음을 누르자. 기본으로 만들어서 처리를 할 것이다. (아무 것도 없는 상태에서 시작)
-<br>
+
+<br><br><br>
 ![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-3.png)
-<br>
+<br><br>
+이후 다음을 누르자. 기본으로 만들어서 처리를 할 것이다. (아무 것도 없는 상태에서 시작)
+<br><br>
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-4.png)
+<br><br>
 프로젝트 세팅 화면이 나온다.
-여기 세팅들은 나중에 변경이 가능하다. 하지만 이왕이면 확정해놓고 덜 바꾸는 게 좋을 것이다.
+여기 세팅들은 나중에 변경이 가능하다. (하지만 이왕이면 지금 확정해놓고 덜 바꾸는 게 좋을 것이다.)
 
 첫 번째 항목은 블루프린트로만 만들거면 블루프린트를 선택하지만, C++도 사용할 예정이라면 C++을 선택한다.
 블루프린트란, 언리얼에서 노드들을 배치해서 연결해서 코드를 짤 수 있게끔 만들어놓은 스크립트 시스템으로,
