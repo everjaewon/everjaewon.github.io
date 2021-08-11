@@ -19,15 +19,14 @@ toc: true
 ![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-2.png)
 <br><br>
 '언리얼 프로젝트 브라우저' 라는 새 창이 뜬다.<br>
-기존 프로젝트들은 위에 나오고, 게임용 프로젝트를 선택하려면 맨 위의 게임을 눌러주면 된다.<br>
-(언리얼마다 기본적으로 타입마다 다르게 제공해주는 템플릿이 있고, 게임은 당연히 게임 관련 템플릿)
-
+기존 프로젝트들은 위에 나오고, 게임용 프로젝트를 선택하려면 맨 위의 게임을 눌러주면 된다.
 
 <br><br><br>
 ## 1. 템플릿 선택
 <br>
 ![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-3.png)
 <br><br>
+언리얼마다 기본적으로 타입마다 다르게 제공해주는 템플릿이 있다.<br>
 이후 다음을 누르자. 기본으로 만들어서 처리를 할 것이다. (아무 것도 없는 상태에서 시작)
 <br><br>
 ## 2. 프로젝트 세팅
