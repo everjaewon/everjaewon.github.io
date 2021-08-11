@@ -22,7 +22,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "DB" %}
-                        <li><a href="/categories/stl" class="" style="font-size:16px">데이터베이스 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/db" class="" style="font-size:16px">데이터베이스 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -30,7 +30,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "UnrealClass" %}
-                        <li><a href="/categories/algorithm" class="">언리얼 수업 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/unrealclass" class="" style="font-size:16px">언리얼 수업 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -38,7 +38,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">C/C++ ({{category[1].size}})</a></li>
+                        <li><a href="/categories/cpp" class="" style="font-size:16px">C/C++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
