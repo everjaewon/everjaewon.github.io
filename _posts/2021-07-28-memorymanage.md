@@ -731,7 +731,7 @@ page frame이 4KB or 4MB가 되도록 허용
 
  • Paging과 Segmentation의 이점을 모두 살리기 위해 둘을 결합한다.
  <br><br><br><br><br>
-# <span style="color:yellow">핵심 질문</span>
+# <span style="color:yellow">핵심 질문 - 1</span>
 ⑴ 물리적 주소와 논리적 주소의 특징을 설명하고 그 차이를 비교하시오<br>
 ⑵ Fixed partitioning과, Dynamic partitioning의 장단점<br>
 ⑶ Buddy System에 대해서 설명하시오<br>
@@ -742,3 +742,16 @@ page frame이 4KB or 4MB가 되도록 허용
 Dynamic Partitioning은 각 프로세스가 요구하는 size의 메모리를 정확하게 할당해주는 방식으로, 최종적으로는 다양한 size의 여러 파티션이 메인 메모리에 존재하게 된다. 그러나 이러한 방식은 결국 메인 메모리에 '구멍'들을 만들 수 있는데, 필요할 때마다 동적으로 파티션을 할당하거나 회수하기 때문에 파티션들이 연속적이지 못해 발생하는 결과이다. 이를 '외부 단편화'라고 부른다. 이를 해결하는 방법으로 'Compaction'이 있다. 프로세스를 연속으로 배치하고, 사용 가능한 메모리가 모두 분산되지 않고 하나의 block으로 있도록 하기 위해 프로세스를 이동하는 방식을 일컫는다. 오직 프로세스의 동적 이동이 가능할 때만 사용되며, 실행 시간 중에 수행된다.<br><br><br>
 ⑶<br>Buddy System은 앞선 Fixed & Dynamic partitioning의 단점을 모두 극복하기 위해 내세운 합리적 타협안이다. paging 과 segmentation 기법을 쓰는 가상 메모리에 비하면 압살당하지만(?), 여전히 수정된 버전이 UNIX SVR4나 리눅스에서 커널 메모리 할당을 위해 쓰이고 있다. 모든 메모리 block은 2의 제곱수 byte의 size를 갖고 있는데, 새로 들어온 프로세스가 가장 큰 size의 block보다 작고 가장 작은 size의 block보다 큰 메모리 공간을 요구한다면, 요구되는 size보다 크거나 같은 최소 size의 block이 나올 때까지 가장 큰 size의 block을 절반으로 쪼개 두 개의 block을 생성하는 알고리즘을 취한다. 이 때 쪼개지는 두 block들을 buddy라고 부르며, 두 buddy 간의 주소는 정확히 한 비트 위치에서 다르다.<br><br><br>
 ⑷<br>Paging은 물리적 메모리를 프레임이라는 고정된 동일 크기의 block으로 나누고, 논리적 메모리를 페이지라는 동일 크기의 block으로 나눈 뒤, n개 페이지 size의 프로그램을 실행해야 하는 경우 'page table'을 설정하여, 논리적 주소를 물리적 주소로 translate해 n개의 사용 가능한 프레임을 찾아 load하는 방법이다. (page table은 가상의 페이지를 물리적인 프레임에 mapping시키는 역할을 하고 있다.) 프로세스의 물리적 주소 공간은 연속적이지 않을 수 있기에, 사용 가능한 모든 프레임들을 지속적으로 추적함으로써 paging이 이루어진다.
+<br><br><br><br><br>
+# <span style="color:yellow">핵심 질문 - 2</span>
+⑴ Page Table과 그 종류에 대해서 설명하시오<br>
+⑵ Segmentation에 대해서 설명하고 paging과 비교하고, 세그먼트와 페이징을 같이 이용하는 것에 대해 설명하시오.
+<br><br><br><br>
+⑴<br>실행 시에 사용되는 메모리의 양에 비해 큰 크기의 page table을 통으로 연속적으로 할당하는 것은 부담이 되기에, 이를 완화하기 위해 다양한 구조의 page table이 존재한다. 계층적 paging, hashed page table, inverted page table이 대표적인 예이다.<br><br>
+Multi-level paging은 page number를 여러 개의 공간으로 나누어, 다중 계층의 table 구조를 사용하는 기법을 말한다. 논리적 주소 공간을 쪼개 다수의 table을 만들고, 각 table의 bit수는 적어지기에 상대적으로 메모리 공간 낭비를 덜할 수 있다.<br><br>
+Hashed page table은 page number를 입력값으로 하는 hash 함수와, 그 결과값을 저장하는 hash table을 활용한 기법이다. page number가 주어지면 그에 상응하는 결과값을 table에서 찾고, 그 결과값에 연결된 linked list에서 해당하는 실제 메모리를 찾아가는 과정을 거친다.<br><br>
+Inverted page table은 이름 그대로 기존의 page table처럼 page의 관점에서 frame을 mapping하는 것이 아닌, 실제 메모리 상의 frame의 관점에서 page를 mapping할 때 사용되는 table이다. 프로세스 내부의 page table과는 달리, 현재 실제로 사용되고 있는 frame들에 한해 page가 mapping되기에, table에 값을 저장할 때 필요한 메모리를 줄여준다는 장점이 있지만, page reference 발생 시 table을 탐색하는 시간이 늘어난다는 단점도 존재한다. table이 page를 mapping할 때 해당 page가 어느 프로세스와 대응되는지에 대한 정보도 필요하기 때문에, 프로세스 번호인 pid값도 담고 있다.<br><br><br>
+⑵<br>segmentation은 메모리 공간을 일련의 논리적 구조 단위로 나누어, 사용자의 관점에서 메모리의 상태를 이해하는 데에 도움을 주는 기법이다. 코드, 스택, 함수, 객체 등 logical한 unit을 segment라 부르며, program은 이 segment들의 모음이라고 할 수 있다. segment의 논리적 주소는 segment number와 offset으로 구성되며, 이를 물리적 주소와 mapping시켜주는 segment table이 존재한다. table에는 크게 base와 limit이 존재하고, 또한 이에 대한 각각의 레지스터가 존재하는데, base는 segment의 시작 지점을, limit은 segment의 size 정보를 나타내고 있다. segment number를 limit과 비교하여 올바른 주소 참조가 되고 있는지 검사가 가능하며, base 정보와 결합하여 물리적 주소를 찾을 수 있게 된다. 논리적 주소 공간에 number와 offset이 존재하고, 이를 물리적 주소와 mapping시켜주는 table이 존재한다는 점에서 paging과 그 구조가 상당히 유사하다고 볼 수 있다.
+각 segment는 서로 그 size가 다양하기 때문에, segment에 대한 메모리 할당은 곧 동적 할당 문제가 되며, 따라서 외부 단편화 문제가 존재한다. 반면 고정된 크기의 메모리 단위만을 사용하는 paging은 소규모의 내부 단편화 문제를 만든다는 차이가 있다.<br><br>
+segmentation과 paging이 직접적인 연관성을 띠고 있지는 않지만, 두 기법의 이점을 모두 취하기 위해서 대다수의 시스템에서는 둘을 결합하여 사용한다. 우선, 논리적으로 연관되어있는 unit들을 관리하기가 용이하다는 점에서 segment를 쓴다. segment는 size가 다양하고 대부분 크다는 점에서 단점이 존재하는데, 이를 segment를 고정된 크기의 덩어리들, 즉 page로 분할함으로써 완화시킨다. 더 작은 단위의 page로 나누어져있기에 전체 segment를 메모리 안팎으로 이동시키기보다는, 사용되는 page 부분만을 이동시킴으로써 물리적 메모리를 관리하기가 쉬워지는 것이다.<br><br>
+각 개별 segment는 paging된 가상 주소 공간으로 구현되며, 논리적 주소는 segment number, page number, page offset의 3가지로 구성된다. 이렇게 segment를 적극 사용하고 이를 page 단위로 분할하여 사용함으로써 각 기법의 장점을 모두 활용하고, 보호와 공유 측면에서도 추가적인 이득을 취할 수 있기에 흔히 사용된다.
