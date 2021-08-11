@@ -8,12 +8,12 @@ toc: true
 ---
 <br><br>
 # 언리얼엔진 설치
-<br><br>
+<br>
 ![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-1.png)
 <br><br>
 에픽게임즈 런쳐에서 상단의 '라이브러리'를 눌러, '엔진 버전' 란에서 버전을 선택해 설치한다.
 설치한 버전을 누르면 언리얼 엔진이 켜진다.
-<br><br><br>
+<br><br><br><br>
 # 새 프로젝트 생성
 <br>
 ![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-2.png)
@@ -65,30 +65,62 @@ c++이 아니라 기능 단위의 노드를 배치, 연결해서 코드를 만�
 그래서 비활성화를 선택할 것이다.
 
 이제 하단에 프로젝트 저장할 위치 폴더 지정한 다음에 프로젝트 이름 적고 '프로젝트 생성'을 눌러준다.
-
+<br><br><br>
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-5.png)
 아마 새 화면이 뜨기까지 시간이 오래 걸릴 것이다. 언리얼은 빌드 시간이 반이라고 한다. 이제부터 **"기다림의 시간"**이 시작되는 것이다.
-
+<br><br><br><br>
+# 프로젝트 생성 후 열리는 파일은 2개
 c++ 베이스이므로 비주얼스투디오도 하나 열리고 언리얼 프로젝트도 따로 열린다. 총 2개 열림.
 
-
+<br><br><br><br>
+# 프로젝트 저장 폴더 內 파일
 프로젝트 저장 폴더가 생성되었을텐데, 구성품을 하나씩 살펴보도록 하겠다.
-
+<br>
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-6.png)
+<br><br><br>
+## 1. 프로젝트 파일
 맨 밑에가 프로젝트 파일. 얘 더블클릭해서 실행할 수도 있다. 절대 지워서는 안 됨!
+<br><br>
+## 2. .vs
 .vs 폴더는 비주얼스투디오 때문에 같이 생성된 애임. 지금 필요하진 않다
+<br><br>
+## 3. Binaries
 Binaries 폴더에는 실제 실행 파일같은 것들이 나옴
+<br><br>
+## 4. Config
 Config는 .ini 파일들이 들어와있는데, 언리얼 설정 정보들이 들어와있는 파일들임.
+<br><br>
+## 5. Content
 Content는 우리가 만들어놓거나 받아놓은 애셋, 리소스들이 들어온다. 당연히, 절대 지워져서는 안 됨! 플레이어 메쉬, 몬스터 메쉬 다 들어오니까.
-DDC는 딱히 노필요
+<br><br>
+## 6. DerivedDataCache
+딱히 노필요
+<br><br>
+## 7. intermediate
 intermediate는 빌드할 때 필요한 것들이 들어와있다.
+<br><br>
+## 8. Saved
 Saved는 스크린샷 등등 일시적으로 저장되는 것들이 있다. 언제든 새로 만들어질 수 있으므로 급하게 필요하지 않다.
+<br><br>
+## 9. Source
 Source는 실제 c++ 코드가 들어온다.
-비주얼 솔루션 파일은 지워져도 전혀 상관이 없다.
+<br><br>
+## 10. vs 솔루션 파일
+비주얼 솔루션 파일은 지워져도 전혀 상관이 없다.<br>
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-7.png)
+<br>
 이렇게 프로젝트 파일 우클릭해서 코드 파일을 만들 수 있기 때문.
+<br><br><br><br>
 
-이제 프로젝트 화면으로 돌아오자.
+# 프로젝트 창 처음 보기
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-8.png)
+이제 프로젝트 화면으로 돌아오자.<br>
 하단에 '콘텐츠 브라우저'가 있다. 맨 왼쪽의 버튼을 누르면,
-이렇게 양쪽으로 디렉토리가 나온다.
-블루프린트나 asset은 contents 폴더로, c++ 코드는 c++ 클래스 폴더로 들어온다.
+<br><br>
+![image](https://raw.githubusercontent.com/everjaewon/everjaewon.github.io/master/assets/images/1-9.png)
+<br>
+이렇게 양쪽으로 디렉토리가 나온다.<br>
+블루프린트나 asset은 'contents' 폴더로, c++ 코드는 'c++ 클래스' 폴더로 들어온다.
 
 C++ 클래스 폴더를 누르면 프로젝트 폴더가 나오고, 이걸 누르면 'GameModeBase' 파일이 하나 있다. 이 파일을 누르면 visual studio 파일을 열어준다.
 
