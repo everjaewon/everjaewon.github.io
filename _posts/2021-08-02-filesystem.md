@@ -511,3 +511,15 @@ toc: true
 ⑸ open() 콜이 per-process open-file table의 적절한 엔트리를 가리키는 포인터를 반환합니다.
 
 ⑹ 그러면, 모든 파일 작업이 이 포인터를 통해 수행됩니다.
+<br><br><br><br><br>
+# <span style="color:yellow">핵심 질문</span>
+⑴ thrashing에 대한 설명<br>
+⑵ copy-on-write 설명
+<br><br><br><br>
+⑴<br>FCB란 파일에 대한 정보를 구성하는 일종의 저장 자료구조를 말한다. 파일마다 독립적으로 존재하며 보조기억장치에 저장되었다가 파일을 open할 때 주기억장치로 전달된다.<br><br><br>
+⑵<br>1. open() 시스템 콜이 file system에 파일 이름을 전달한다.<br>
+2. 해당 이름에 대해 커널 속 directory sturcture가 검색된다.<br>
+3. 검색됐으면 FCB가 커널 속 system-wide open-file table에 복사된다.<br>
+4. 커널 속 per-process open-file table에 엔트리가 생성된다. (system-wide open-file table의 엔트리를 가리키는 포인터 有)<br>
+5. open() 시스템 콜이 per-process file-system table의 적절한 엔트리에 포인터를 반환한다.<br>
+6. 그리고 이 반환된 포인터를 통해 파일 작업이 수행된다.
