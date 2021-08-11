@@ -10,23 +10,23 @@
       </li>
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title" style="color:yellow; font-size:20px">Computer Science</span>
+        <span class="nav__sub-title">Computer Science</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Os" %}
-                        <li><a href="/categories/os" class="" style="font-size:20px">운영체제 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/os" class="">운영체제 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "DB" %}
-                        <li><a href="/categories/stl" class="" style="font-size:13px">데이터베이스 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/stl" class="">데이터베이스 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title" style="color:yellow; font-size:20px">Programming Language</span>
+        <span class="nav__sub-title">Programming Language</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
