@@ -26,11 +26,19 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title" style="color:#add8e6">Unreal Engine</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "UnrealClass" %}
+                        <li><a href="/categories/algorithm" class="">언리얼 수업 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title" style="color:#add8e6">Programming Language</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">알고리즘 구현 (with C++) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/algorithm" class="">C/C++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
