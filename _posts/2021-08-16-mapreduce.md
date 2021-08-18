@@ -17,14 +17,14 @@ toc: true
 ### 맵 / 리듀스 2개의 메서드로 구성
 
 ① 맵 : list(k1, v1) → list(k2, v2)<br>
- • key와 value로 구성된 목록을 입력받아,<br>
+- key와 value로 구성된 목록을 입력받아,<br>
   - 이를 가공 및 분류 後<br>
   - 새로운 key와 value로 구성된 목록을 출력<br>
- • 맵 메서드가 반복해서 수행되다 보면, 새로운 key를 갖는 여러 개의 value가 만들어짐<br>
- • 이 새로운 key로 grouping된 value의 목록을 리듀스 메서드의 입력 데이터로 전달
+- 맵 메서드가 반복해서 수행되다 보면, 새로운 key를 갖는 여러 개의 value가 만들어짐<br>
+- 이 새로운 key로 grouping된 value의 목록을 리듀스 메서드의 입력 데이터로 전달
 
 ② 리듀스 : list(k2, list(v2)) → list(k3, v3)<br>
- • value의 목록에 대한 집계 연산 실행 → 새로운 key와 value로 구성된 목록을 생성
+- value의 목록에 대한 집계 연산 실행 → 새로운 key와 value로 구성된 목록을 생성
 
 ex) 두 줄 문장으로 구성된 txt 파일을 입력받아, 각 단어의 출현 빈도를 분석하는 프로그램
 
